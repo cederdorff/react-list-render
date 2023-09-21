@@ -32,3 +32,8 @@
         animation: logo-spin infinite 20s linear;
     }
 }
+
+section > article {
+    text-align: left;
+    padding: 1em 0;
+}
