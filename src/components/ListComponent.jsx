@@ -1,6 +1,6 @@
 import ListItem from "./ListItem";
 
-export default function List() {
+export default function ListComponent() {
     const items = [
         {
             id: 1,
