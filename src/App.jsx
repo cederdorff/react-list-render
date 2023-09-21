@@ -6,9 +6,7 @@ function App() {
     return (
         <>
             <header>
-                <a href="https://react.dev" target="_blank" rel="noreferrer">
-                    <img src={reactLogo} className="logo react" alt="React logo" />
-                </a>
+                <img src={reactLogo} className="logo react" alt="React logo" />
                 <h1>React List Render Component</h1>
             </header>
             <List />
