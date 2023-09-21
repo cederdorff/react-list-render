@@ -1,7 +1,7 @@
 import ListItem from "./ListItem";
 
 export default function List() {
-    const data = [
+    const items = [
         {
             id: 1,
             title: "Exciting Product Launch",
@@ -21,7 +21,7 @@ export default function List() {
 
     return (
         <section>
-            {data.map(item => (
+            {items.map(item => (
                 <ListItem title={item.title} content={item.content} key={item.id} />
             ))}
         </section>
