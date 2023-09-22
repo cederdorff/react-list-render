@@ -1,5 +1,5 @@
 import reactLogo from "./assets/react.svg";
-import ListComponent from "./components/ListComponent";
+import MemberList from "./components/MemberList";
 
 function App() {
     return (
@@ -8,7 +8,7 @@ function App() {
                 <img src={reactLogo} className="logo react" alt="React logo" />
                 <h1>React List Render Component</h1>
             </header>
-            <ListComponent />
+            <MemberList />
         </>
     );
 }
