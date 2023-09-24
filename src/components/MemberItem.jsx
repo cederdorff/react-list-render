@@ -1,17 +1,21 @@
 export default function MemberItem({ member }) {
+    // Member's date of birth as JS Date Object
+    const dateOfBirth = new Date(member.dateOfBirth);
+
+    // Function to get formatted member birthday
     function getMemberBirthday() {
-        const birthday = new Date(member.dateOfBirth);
-        const formattedBirthday = birthday.toLocaleString("da", { month: "short", day: "numeric", year: "numeric" });
+        const formattedBirthday = dateOfBirth.toLocaleString("da", { month: "short", day: "numeric", year: "numeric" });
         return formattedBirthday;
     }
 
+    // Function to calculate member's age
     function getAge() {
-        const birthday = new Date(member.dateOfBirth);
-        const diff = Date.now() - birthday.getTime();
-        const years = Math.floor(diff / 1000 / 60 / 60 / 24 / 365);
-        return years;
+        const ageInMilliseconds = Date.now() - dateOfBirth.getTime();
+        const ageInYears = Math.floor(ageInMilliseconds / (1000 * 60 * 60 * 24 * 365));
+        return ageInYears;
     }
 
+    // This is the JSX code for rendering the member information in a table row.
     return (
         <tr>
             <td>
