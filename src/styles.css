@@ -72,6 +72,9 @@ button:focus-visible {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+header {
     text-align: center;
 }
 
@@ -106,4 +109,12 @@ button:focus-visible {
 section > article {
     text-align: left;
     padding: 1em 0;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    text-align: left;
 }
